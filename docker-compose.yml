@@ -21,9 +21,9 @@ volumes:
 x-shared_environment: &shared_environment
   LOG_LEVEL: ${LOG_LEVEL:-debug}
   DATABASE_HOST: db
-  DATABASE_NAME: &db_name ${DB_NAME}
-  DATABASE_USERNAME: &db_username ${DB_USERNAME}
-  DATABASE_PASSWORD: &db_password ${DB_PASSWORD}
+  DATABASE_NAME: &db_name ${DATABASE_NAME}
+  DATABASE_USERNAME: &db_username ${DATABASE_USERNAME}
+  DATABASE_PASSWORD: &db_password ${DATABASE_PASSWORD}
   
 services:
   app:
